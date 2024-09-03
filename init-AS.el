@@ -1,6 +1,13 @@
-;; This is my personal init file. Add the following lines to the `.emacs` file
-;; 
-;; (add-to-list 'load-path "/home/andsunds/.emacs.d/own_addons")
+;; This is my personal init file. 
+;; Add the following lines to the `.emacs` file:
+;;
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(region ((t (:background "#e07020" :foreground "gtk_selection_fg_color")))))
+;; (add-to-list 'load-path "/home/andsunds/.emacs.d/emacs-init")
 ;; (load "init-AS.el" nil t t)
 
 
