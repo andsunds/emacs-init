@@ -2,9 +2,7 @@
 ;; 
 ;; (add-to-list 'load-path "/home/andsunds/.emacs.d/own_addons")
 ;; (load "init-AS.el" nil t t)
-;; (load "andsundstex.el" nil t t)
-;; (load "python-AS.el" nil t t)
-;; (load "symbol-overlay-AS.el" nil t t)
+
 
 
 ;; Removes the backup "tilde" files
@@ -40,3 +38,9 @@
 (global-set-key (kbd "s-SPC :") (lambda () (interactive) (insert "Ö")))
 (global-set-key (kbd "s-SPC '") (lambda () (interactive) (insert "ä")))
 (global-set-key (kbd "s-SPC \"") (lambda () (interactive) (insert "Ä")))
+
+;; loading other settings
+(load "andsundstex.el" nil t t)
+(load "python-AS.el" nil t t)
+(load "symbol-overlay-AS.el" nil t t)
+(load "show-paren-off-screen.el" nil t t)
