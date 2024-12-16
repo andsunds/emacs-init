@@ -46,6 +46,17 @@
 (global-set-key (kbd "s-SPC '") (lambda () (interactive) (insert "ä")))
 (global-set-key (kbd "s-SPC \"") (lambda () (interactive) (insert "Ä")))
 
+;; Smart beginning of line to remap C-a
+(defun smart-line-beginning ()
+  "Move point to the beginning of text on the current line; if that is already
+the current position of point, then move it to the beginning of the line."
+  (interactive)
+  (let ((pt (point)))
+    (beginning-of-line-text)
+    (when (eq pt (point))
+      (beginning-of-line))))
+(global-set-key (kbd "C-a") 'smart-line-beginning)
+
 ;; loading other settings
 (load "andsundstex.el" nil t t)
 (load "python-AS.el" nil t t)
